@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ascii Donut</title>
+    <style>
+        body {margin: 0;}
+        /* Estilos básicos para el botón circular */
+        .circular-button {
+            position: fixed; /* Fijar posición */
+            bottom: 13px; /* 20px desde la parte inferior */
+            right: 13px; /* 20px desde la parte derecha */
+            width: 38px; /* Diámetro del botón */
+            height: 38px; /* Diámetro del botón */
+            border-radius: 50%; /* Hacerlo circular */
+            background-color: white; /* Color de fondo blanco */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambia el cursor al pasar sobre él */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        /* Estilos para la imagen dentro del botón */
+        .circular-button img {
+            width: 20px; /* Ajusta el tamaño de la imagen */
+            height: 20px; /* Ajusta el tamaño de la imagen */
+            position: absolute; /* Posición absoluta para la imagen */
+            top: 50%; /* Posiciona la imagen en el centro verticalmente */
+            left: 50%; /* Posiciona la imagen en el centro horizontalmente */
+            transform: translate(-50%, -50%); /* Centra la imagen */
+        }
+
+    </style>
+</head>
+<body>
+<script type="module" src="./main.js"></script>
+
+<!-- Botón circular -->
+<button id="myButton" class="circular-button">
+    <img src="./public/ic_code_black_24dp.svg" alt="Imagen personalizada">
+</button>
+
+<script>
+    document.getElementById('myButton').addEventListener('click', function() {
+        window.location.href = 'https://github.com/mathyrolando/ascii_donut'; // Reemplaza 'tu_enlace.html' con tu URL deseada
+    });
+</script>
+</body>
+</html>
