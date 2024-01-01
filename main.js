@@ -39,6 +39,11 @@ function init(){
     pointLight2.position.set(-15,15,-15);
     scene.add(pointLight2);
 
+    const ambientLight = new THREE.AmbientLight(
+        0xffffff,
+        0.01
+    )
+    scene.add(ambientLight);
 
     torus = donut();
 
